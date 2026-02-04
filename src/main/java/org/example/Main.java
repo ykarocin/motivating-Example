@@ -4,6 +4,7 @@ package org.example;
         public static void main(String[] args) {
             String input = args[0];
             Text t = new Text(input);
+            t.normalizeWhiteSpace(); // Previous change
             t.removeComments();
             System.out.println(t.getText());
         }

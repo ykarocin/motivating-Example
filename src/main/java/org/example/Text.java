@@ -12,6 +12,11 @@ public class Text {
         text = text.replaceAll("//.*", "");
     }
 
+    // Previous change
+    public void normalizeWhiteSpace() { 
+        text = text.replaceAll("\\s+", " ").trim();
+    }
+
     public String getText() {
         return text;
     }
