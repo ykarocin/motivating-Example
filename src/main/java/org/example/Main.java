@@ -5,6 +5,7 @@ package org.example;
             String input = args[0];
             Text t = new Text(input);
             t.removeComments();
+            t.removeDuplicateWords(); // Current change
             System.out.println(t.getText());
         }
     }
