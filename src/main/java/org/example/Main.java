@@ -6,6 +6,7 @@ package org.example;
             Text t = new Text(input);
             t.normalizeWhiteSpace(); // Previous change
             t.removeComments();
+            t.removeDuplicateWords(); // Current change
             System.out.println(t.getText());
         }
     }
